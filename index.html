@@ -1,81 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Shivam Sharma | Portfolio</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 40px;
-        background: #f4f4f4;
-        color: #333;
-      }
-      h1 {
-        color: #0077cc;
-      }
-      a {
-        color: #0077cc;
-        text-decoration: none;
-      }
-      section {
-        margin-bottom: 30px;
-      }
-    </style>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivam Sharma | Developer Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #005a9e;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      display: block;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background: #555;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #005a9e;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+    }
+    .project-list li {
+      margin-bottom: 10px;
+    }
+    .resume-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #005a9e;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .resume-button:hover {
+      background-color: #003f73;
+    }
+  </style>
+</head>
+<body>
+  <header>
     <h1>Shivam Sharma</h1>
-    <p>Backend Developer | Problem Solver | Learner</p>
+    <p>Backend Developer | Problem Solver | Continuous Learner</p>
+  </header>
 
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I’m a backend developer with 3+ years of experience building and
-        maintaining scalable systems. I'm currently working on a large HRMS
-        platform and building new tools using .NET Core and Vue.js.
-      </p>
-    </section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <strong>TaskFlow</strong> – A project and task management system (.NET
-          Core + Vue.js) –
-          <a href="https://github.com/shivams906/taskflow" target="_blank"
-            >GitHub</a
-          >
-        </li>
-        <li>
-          <strong>Diary App</strong> – Personal journaling web app (Django) –
-          <a href="https://github.com/shivams906/diary" target="_blank"
-            >GitHub</a
-          >
-        </li>
-        <li>
-          <strong>Bootcamp Clone</strong> – Full-stack learning project (Django)
-          –
-          <a href="https://github.com/shivams906/bootcamp-clone" target="_blank"
-            >GitHub</a
-          >
-        </li>
-      </ul>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a backend-focused software developer with over 3 years of experience building and maintaining scalable systems. Currently working on a multi-client HRMS platform, and developing a full-stack side project with .NET Core and Vue.js. I enjoy solving real-world problems and continuously improving my technical depth.</p>
+  </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>
-        Email: <a href="mailto:shivams906@gmail.com">shivams906@gmail.com</a
-        ><br />
-        GitHub:
-        <a href="https://github.com/shivams906" target="_blank"
-          >github.com/shivams906</a
-        ><br />
-        LinkedIn:
-        <a href="https://linkedin.com/in/shivams906" target="_blank"
-          >linkedin.com/in/shivams906</a
-        >
-      </p>
-    </section>
-  </body>
+  <section id="skills">
+    <h2>Skills</h2>
+    <p><strong>Languages & Frameworks:</strong> C#, .NET WebForms, .NET Core, Python, Django, Java (basic), Vue.js (learning)</p>
+    <p><strong>Databases:</strong> SQL Server, PostgreSQL, MySQL, SQLite</p>
+    <p><strong>Tools & Platforms:</strong> Git, Visual Studio, VS Code, Postman, SSMS, Linux</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul class="project-list">
+      <li><strong>TaskFlow</strong> – A full-stack project and task manager with role-based access and time tracking. [<a href="https://github.com/shivams906/taskflow-api" target="_blank">GitHub</a>]</li>
+      <li><strong>Diary App</strong> – A personal journal web app built with Django and SQLite. [<a href="https://github.com/shivams906/diary" target="_blank">GitHub</a>]</li>
+      <li><strong>Bootcamp Clone</strong> – A learning project mimicking a multi-feature platform. [<a href="https://github.com/shivams906/bootcamp-clone" target="_blank">GitHub</a>]</li>
+      <li><strong>Reddit Clone</strong> – A very simple clone of Reddit. [<a href="https://github.com/shivams906/reddit-clone" target="_blank">GitHub</a>]</li>
+      <li><strong>PNGme</strong> – An implementation of PNGme: An Intermediate Rust Project [<a href="https://github.com/shivams906/PNGme" target="_blank">GitHub</a>]</li>
+      <li><strong>Blogger</strong> – A very simple blogging app [<a href="https://github.com/shivams906/blogger" target="_blank">GitHub</a>]</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>Currently working as a Senior Software Developer at Ascensive Technologies. My responsibilities include backend development and maintenance for a multi-tenant HRMS platform used by 40+ clients and ~10,000 users. I handle bug fixes, review and merge junior developers’ code, and assist in deployment. I’ve also set up 20+ new client instances with full configuration, deployed updates across web and desktop components, and supported Windows biometric punch service installations. Additionally, I perform database administration tasks such as migrations, backups, scheduled jobs, and space cleanup.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:shivams906@gmail.com">shivams906@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/shivams906" target="_blank">github.com/shivams906</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/shivams906" target="_blank">linkedin.com/in/shivams906</a></p>
+    <p><a href="Shivam_Sharma_Resume.pdf" class="resume-button" target="_blank">📄 View My Resume (PDF)</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Shivam Sharma. Built with ❤️ using GitHub Pages.
+  </footer>
+</body>
 </html>
